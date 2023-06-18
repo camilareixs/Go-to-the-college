@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="jogo.css">
+
+</head>
+
+<body id="pagina-jogar">
+
+<canvas id="myCanvas" width="980" height="550">
+    <img id="backgroundImage" src="Captura de Tela (80).png">
+</canvas>
+
+
+<div class="botao">
+    <button onclick="reiniciarJogo();" id="restart">Restart</button>
+    <button onclick="jogar();" id = "jogar">Jogar</button>
+    <button id="menu">
+        <a  class="color" href="index.html"> MENU</a>
+    </button>
+</div>
+
+
+<script>
+
+    var tela = document.getElementById("tela");
+    var c = tela.getContext("2d");
+
+    function desenhaImagem() {
+        var imagem = new Image();
+        imagem.src = "Captura de Tela (80).png"
+        imagem.onload = function() {
+            c.drawImage(imagem,0, 0, tela.width, tela.height);
+        }
+    }
+
+    desenhaImagem();
+
+
+
+</script>
+
+
+
+
+<script src="/jogo.js"></script>
+</body>
+</html>

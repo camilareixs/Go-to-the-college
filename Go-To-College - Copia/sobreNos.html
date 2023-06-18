@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre as desenvolvedoras</title>
+    <link rel="stylesheet" href="jogo.css">
+
+</head>
+<body class="corFundo2">
+<div class="menu">
+
+    <ul>
+        <li><a  class="color" href="index.html"> HISTÓRIA</a></li>
+        <li><a  class="color1 "href="sobreNos.html"> DESENVOLVEDORAS</a></li>
+        <li> <a  class="color3 "href="comoJogar.html"> TUTORIAL</a> </li>
+        <li><a class="color4" href="jogo.html">JOGAR</a> </li>
+    </ul>
+
+
+</div>
+
+
+<div class="conteudo">
+      <h1>Desenvolvedora Camila Reis </h1>
+
+    <img id="foto-camila" src="camila-foto.jpeg" alt="Camila">
+    <p>Meu nome é  <i>Camila Reis</i>, RA: 222220378, e meu email é camiduda15@gmail.com.
+        Sou estudante do curso de Ciência da Computação e estou no 1º semestre.
+        Tenho grande interesse em programação e, atualmente, minha matéria preferida é Desenvolvimento Web.
+        Nas horas vagas, gosto de ler, assistir filmes e sair com amigos.</p>
+
+</div>
+
+<div class="conteudo">
+    <hr>
+<h1>Desenvolvedora Beatriz Emerenciano</h1>
+
+
+    <img id="beatriz-foto" src="foto-bia.jpeg" alt="beatriz-foto">
+    <p>"Sou a <i>Beatriz Emerenciano</i>, RA: 22222041-0, e meu email é beatrizemerenciano@hotmail.com.
+        Estou cursando Ciência da Computação e atualmente estou no 1º semestre. Tenho grande interesse em Programação e Design Web,
+        e sou conhecida por ser bastante criativa. Meus hobbies incluem tocar violão, teclado e cozinhar.</p>
+
+    <audio id="meuAudio2" src="Time%20Out.mp3"></audio>
+    <button id="playButton">Song</button>
+</div>
+
+
+
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var meuAudio2 = document.getElementById('meuAudio2');
+        var playButton1 = document.getElementById('playButton');
+
+        playButton1.addEventListener('click', function() {
+            meuAudio2.play();
+        });
+    });
+</script>
+
+</body>
+</html>
